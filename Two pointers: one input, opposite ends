@@ -1,0 +1,38 @@
+// here , there is one array and two pointer on the array one is on start and other is on end of array. by this code we can move the pointer left and other to right utill they cross each other.
+ //c++
+ 
+int fn(vector<int>& arr) {
+    int left = 0;
+    int right = int(arr.size()) - 1;
+    int ans = 0;
+
+    while (left < right) {
+        // do some logic here with left and right
+        if (CONDITION) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+
+    return ans;
+}
+
+//java
+
+public int fn(int[] arr) {
+    int left = 0;
+    int right = arr.length - 1;
+    int ans = 0;
+
+    while (left < right) {
+        // do some logic here with left and right
+        if (CONDITION) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+
+    return ans;
+}
