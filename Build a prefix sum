@@ -1,0 +1,25 @@
+c++:
+
+vector<int> fn(vector<int>& arr) {
+    vector<int> prefix(arr.size());
+    prefix[0] = arr[0];
+
+    for (int i = 1; i < arr.size(); i++) {
+        prefix[i] = prefix[i - 1] + arr[i];
+    }
+
+    return prefix;
+}Build a prefix sum
+
+java:
+
+public int[] fn(int[] arr) {
+    int[] prefix = new int[arr.length];
+    prefix[0] = arr[0];
+
+    for (int i = 1; i < arr.length; i++) {
+        prefix[i] = prefix[i - 1] + arr[i];
+    }
+
+    return prefix;
+}
